@@ -38,12 +38,18 @@
             border-radius: 5px;
             margin: 10px 0;
         }
-        .exercise {
+        .newsletter {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -68,12 +74,14 @@
         <a href="[LINK ZUR APP EINFÜGEN]" class="button">Jetzt App herunterladen</a>
 
         <h2>Reminder</h2>
-        <p>Melde dich an und erhalte nach 5 Tagen den Link zu einer Umfrage, die mir bei meiner Bachelorarbeit hilft. Alle Daten werden vertraulich behandelt!</p>
-        <form action="https://formspree.io/f/xzzzkagy" method="POST">
-            <label for="email">Deine E-Mail-Adresse:</label>
-            <input type="email" id="email" name="email" placeholder="E-Mail eingeben" required>
-            <button type="submit">Anmelden</button>
-        </form>
+        <div class="newsletter">
+            <p>Trage dich ein und erhalte nach 5 Tagen den Link zu einer Umfrage, die mir bei meiner Bachelorarbeit hilft. Alle Daten werden vertraulich behandelt!</p>
+            <form action="https://formspree.io/f/myzzbjak" method="POST">
+                <label for="email">Deine E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" placeholder="E-Mail eingeben" required>
+                <button type="submit">Anmelden</button>
+            </form>
+        </div>
 
         <h2>Hast du Fragen?</h2>
         <p>Schreib mich einfach an!</p>
